@@ -60,10 +60,6 @@ function App() {
     });
   }
 
-  useEffect(() => {
-    generateQuote();
-  }, []);
-
   return (
     <div className="App">
       <div className="center" style={{
