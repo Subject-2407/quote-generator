@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import './App.css'
 
 function App() {
-  const [quote, setQuote] = useState({text: 'Hello world.', author: 'John Doe'});
+  const [quote, setQuote] = useState({text: 'In the Name of Allah, the Most Beneficent, the Most Merciful.', author: 'Anonymous'});
   const [loading, setLoading] = useState(false);
   const [colorTheme, setColorTheme] = useState('#202124');
 
