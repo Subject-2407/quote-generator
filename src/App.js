@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
   const [quote, setQuote] = useState({text: 'In the Name of Allah, the Most Beneficent, the Most Merciful.', author: 'Anonymous'});
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [colorTheme, setColorTheme] = useState('#202124');
 
   const updateQuote = (data) => {
@@ -59,6 +59,10 @@ function App() {
       updateColor(randomColor);
     });
   }
+
+  useEffect(() => {
+    updateLoading(false);
+  }, []);
 
   return (
     <div className="App">
