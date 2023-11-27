@@ -61,7 +61,9 @@ function App() {
   }
 
   useEffect(() => {
-    updateLoading(false);
+    setTimeout(() => {
+      updateLoading(false);
+    }, 500);
   }, []);
 
   return (
